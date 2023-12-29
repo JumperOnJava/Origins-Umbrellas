@@ -51,7 +51,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+	modCompileOnly files("libs/Origins-1.20.1-1.10.0.jar") // "com.github.apace100:origins-fabric:${project.origins_version}"
+	modCompileOnly files("libs/reach-entity-attributes-2.4.0.jar")// "com.github.apace100:origins-fabric:${project.origins_version}"
+	modCompileOnly files("libs/apoli-v2.9.0.jar")// "com.github.apace100:origins-fabric:${project.origins_version}"
+	modCompileOnly files("libs/calio-v1.11.0.jar")// "com.github.apace100:origins-fabric:${project.origins_version}"
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
